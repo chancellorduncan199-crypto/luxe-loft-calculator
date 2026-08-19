@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jewel Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>SHIEN Calculator</h1>
+
+
+        <!-- CATEGORY SELECTOR -->
+
+        <div class="categories">
+
+            <button
+                class="category active"
+                onclick="selectCategory('clothing', this)"
+            >
+                Clothing
+            </button>
+
+            <button
+                class="category"
+                onclick="selectCategory('accessories', this)"
+            >
+                Accessories
+            </button>
+
+        </div>
+
+
+        <!-- CALCULATOR -->
+
+        <div class="card">
+
+            <h2 id="categoryTitle">
+                Clothing Calculator
+            </h2>
+
+
+
+            <label for="usd">
+                Total USD
+            </label>
+
+            <div class="input-group">
+
+                <span>$</span>
+
+                <input
+                    type="number"
+                    id="usd"
+                    placeholder="Enter USD amount"
+                    min="0"
+                    step="0.01"
+                >
+
+            </div>
+
+
+            <label for="commission">
+                Commission (TTD)
+            </label>
+
+            <div class="input-group">
+
+                <span>TT$</span>
+
+                <input
+                    type="number"
+                    id="commission"
+                    placeholder="0.00"
+                    min="0"
+                    step="0.01"
+                >
+
+            </div>
+
+
+            <button
+                class="calculate-button"
+                onclick="calculate()"
+            >
+                Calculate
+            </button>
+
+        </div>
+
+
+        <!-- RESULTS -->
+
+        <div id="results" class="hidden">
+
+            <div class="total-card">
+
+                <p>
+                    Estimated Total
+                </p>
+
+                <h2 id="finalTotal">
+                    TT$0.00
+                </h2>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>
+                    Calculation Breakdown
+                </h2>
+
+                <div id="breakdown"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
