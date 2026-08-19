@@ -6,7 +6,7 @@ const EXCHANGE_RATE = 8.5;
 
 const CUSTOMS_SERVICE_RATE = 0.125;
 
-const OPT_RATE = 0.15;
+const OPT_RATE = 0.10;
 
 const ADVANCE_PAYMENT_RATE = 0.15;
 
@@ -21,12 +21,12 @@ const categories = {
 
     clothing: {
         name: "Clothing",
-        dutyRate: 0.40
+        dutyRate: 0.25
     },
 
     accessories: {
         name: "Accessories",
-        dutyRate: 0.30
+        dutyRate: 0.40
     },
 
     cases: {
